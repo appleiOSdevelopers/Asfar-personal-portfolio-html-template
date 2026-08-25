@@ -137,7 +137,7 @@ $(function() {
     const $c = $(card);
     const title = $c.data('title');
     const img   = $c.data('img');
-    const tags = String($c.data('tags') || '').split(',');
+	const tags = String($c.data('tags') || '').split(',');
     const desc  = $c.data('desc');
     const role  = $c.data('role');
     const year  = $c.data('year');
@@ -170,50 +170,6 @@ $(function() {
   $('#modal-close, #modal-backdrop').on('click', closeModal);
   $(document).on('keydown', function(e) {
     if (e.key === 'Escape') closeModal();
-  });
-
-  // Contact Form Handler
-  $('#cf-submit').on('click', function(e) {
-    e.preventDefault();
-    const name = $('#cf-name').val().trim();
-    const email = $('#cf-email').val().trim();
-    const message = $('#cf-message').val().trim();
-    const $status = $('#cf-status');
-
-    // Validation
-    if (!name || !email || !message) {
-      $status.html('<span style="color: var(--accent3);">Please fill in all fields.</span>');
-      return;
-    }
-
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-      $status.html('<span style="color: var(--accent3);">Please enter a valid email address.</span>');
-      return;
-    }
-
-    // Simulate form submission
-    $status.html('<span style="color: var(--accent2);">Sending your message...</span>');
-    
-    setTimeout(function() {
-      // In production, you would send this to a backend service
-      console.log({ name, email, message });
-      
-      $status.html('<span style="color: var(--accent2);">Message sent! I\'ll get back to you soon.</span>');
-      $('#cf-name').val('');
-      $('#cf-email').val('');
-      $('#cf-message').val('');
-      
-      setTimeout(function() {
-        $status.html('');
-      }, 3000);
-    }, 1000);
-  });
-
-  // Allow Enter key to submit
-  $('#cf-message').on('keypress', function(e) {
-    if (e.key === 'Enter' && e.ctrlKey) {
-      $('#cf-submit').click();
-    }
   });
 
 });

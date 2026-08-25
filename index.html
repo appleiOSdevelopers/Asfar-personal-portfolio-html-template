@@ -8,7 +8,7 @@
 <!-- Bootstrap 5 -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <!-- Bootstrap Icons -->
-<link rel="stylesheet" href="css/bootstrap-icons.css">
+<link rel="stylesheet" href="font/bootstrap-icons.css">
 <!-- Font Awesome (fallback + extra icons) -->
 <link rel="stylesheet" href="css/all.min.css">
 <!-- Google Fonts -->
@@ -85,9 +85,9 @@
         <div class="section-label">Who I Am</div>
         <div class="about-title">Creative <span class="accent">Mind,</span><br>Precise Code.</div>
         <p class="about-desc">
-          Hey! I'm Alex — a full-stack developer and UI designer obsessed with building beautiful, performant products. I blend pixel-perfect design with clean architecture to deliver exceptional digital experiences.
+          Hey! I'm Alex — a full-stack developer and UI designer obsessed with building beautiful, performant products. I blend pixel-perfect design with clean architecture to deliver experiences users actually love.
           <br><br>
-          When I'm not pushing commits, you'll find me exploring generative art, contributing to open source, or diving deep into emerging technologies.
+          When I'm not pushing commits, you'll find me exploring generative art, contributing to open source, or drinking too much coffee.
         </p>
         <div class="skill-pills">
           <span class="skill-pill">React</span>
@@ -114,7 +114,7 @@
         data-title="Neon Dashboard"
         data-img="img/portfolio/work1.jpg"
         data-tags="UI/UX,Branding,Figma"
-        data-desc="A futuristic analytics dashboard built for a SaaS startup. Designed end-to-end from wireframes to a production-ready React component library. Features real-time data visualization, customizable widgets, and an intuitive dark mode interface."
+        data-desc="A futuristic analytics dashboard built for a SaaS startup. Designed end-to-end from wireframes to a production-ready React component library. Features real-time data visualization, dark/light mode toggle, and a fully responsive layout with 99+ Lighthouse score."
         data-role="Lead Designer & Developer"
         data-year="2025"
         data-stack="React · Figma · TailwindCSS · Recharts"
@@ -131,7 +131,7 @@
         data-title="SaaS Platform"
         data-img="img/portfolio/work2.jpg"
         data-tags="Web App,React,Node.js"
-        data-desc="End-to-end SaaS platform for B2B project management. Includes team workspaces, role-based access control, Stripe billing integration, and a real-time notification system. Scalable architecture built to handle enterprise workloads."
+        data-desc="End-to-end SaaS platform for B2B project management. Includes team workspaces, role-based access control, Stripe billing integration, and a real-time notification system. Scaled to 10,000+ daily active users within 3 months of launch."
         data-role="Full Stack Developer"
         data-year="2024"
         data-stack="React · Node.js · PostgreSQL · Stripe"
@@ -148,7 +148,7 @@
         data-title="Immersive World"
         data-img="img/portfolio/work3.jpg"
         data-tags="3D,WebGL,Three.js"
-        data-desc="An interactive 3D product showcase built with Three.js and WebGL. Users can explore and configure products in a photorealistic 3D environment directly in the browser — no plugins required. Supports real-time rendering and physics simulation."
+        data-desc="An interactive 3D product showcase built with Three.js and WebGL. Users can explore and configure products in a photorealistic 3D environment directly in the browser — no plugins required. Featured on Awwwards Site of the Day."
         data-role="Creative Developer"
         data-year="2024"
         data-stack="Three.js · WebGL · GSAP · Blender"
@@ -165,7 +165,7 @@
         data-title="Luxury Store"
         data-img="img/portfolio/work4.jpg"
         data-tags="E-Commerce,Shopify,UX"
-        data-desc="A bespoke e-commerce experience for a high-end fashion brand. Custom Shopify theme with fluid animations, 3D product viewer, and a seamless checkout flow. Conversion rate improved by 40% within three months."
+        data-desc="A bespoke e-commerce experience for a high-end fashion brand. Custom Shopify theme with fluid animations, 3D product viewer, and a seamless checkout flow. Conversion rate improved by 240% post-launch."
         data-role="UX Designer & Shopify Developer"
         data-year="2024"
         data-stack="Shopify · Liquid · GSAP · Three.js"
@@ -199,7 +199,7 @@
         data-title="AI Generator"
         data-img="img/portfolio/work6.jpg"
         data-tags="AI,Python,OpenAI"
-        data-desc="A generative AI platform that creates custom marketing assets — ad copy, images, and video scripts — from a single brand brief. Powered by GPT-4 and Stable Diffusion with advanced prompt engineering."
+        data-desc="A generative AI platform that creates custom marketing assets — ad copy, images, and video scripts — from a single brand brief. Powered by GPT-4 and Stable Diffusion with a custom fine-tuned model pipeline."
         data-role="AI Engineer & Product Designer"
         data-year="2023"
         data-stack="Python · OpenAI API · React · FastAPI"
@@ -308,12 +308,11 @@
     <a class="contact-email" href="mailto:hello@alexreeves.dev">hello@alexreeves.dev</a>
     <div class="contact-form">
       <div class="cf-row">
-        <input class="cf-field" type="text" id="cf-name" placeholder="Your Name">
-        <input class="cf-field" type="email" id="cf-email" placeholder="Email Address">
+        <input class="cf-field" type="text" placeholder="Your Name">
+        <input class="cf-field" type="email" placeholder="Email Address">
       </div>
-      <textarea class="cf-field" id="cf-message" placeholder="Tell me about your project..."></textarea>
-      <a class="btn-glow" id="cf-submit" style="display:inline-block;">Send Message &nbsp;<i class="bi bi-send-fill"></i></a>
-      <div id="cf-status" style="margin-top: 1rem; font-size: 0.9rem;"></div>
+      <textarea class="cf-field" placeholder="Tell me about your project..."></textarea>
+      <a class="btn-glow" style="display:inline-block;">Send Message &nbsp;<i class="bi bi-send-fill"></i></a>
     </div>
     <div class="socials">
       <a href="#" class="social-btn" title="GitHub"><i class="bi bi-github"></i></a>
@@ -373,6 +372,16 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- GSAP -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+<script>
+
+</script>
+<!-- jQuery -->
+<script src="js/jquery-3.7.1.min.js"></script>
+<!-- Bootstrap 5 JS -->
+<script src="js/bootstrap.bundle.min.js"></script>
+<!-- GSAP -->
+<script src="js/gsap.min.js"></script>
 <!-- main js -->
 <script src="js/main.js"></script>
 </body>
